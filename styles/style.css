@@ -46,6 +46,8 @@
 }
 
 .header__logo {
+  display: block;
+  text-decoration: none;
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   text-align: center;
   font-weight: normal;

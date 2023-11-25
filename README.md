@@ -1,0 +1,1 @@
+https://github.com/Sintezzia/zakrivayuschiy-teg-f.git

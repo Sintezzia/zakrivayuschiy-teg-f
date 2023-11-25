@@ -50,6 +50,10 @@ button {
   padding: 0;
 }
 
+button:focus {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;

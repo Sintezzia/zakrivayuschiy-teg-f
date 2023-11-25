@@ -12,3 +12,98 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  animation: marker 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes marker {
+  from {
+    left: -20px;
+  }
+
+  to {
+    left: -16px;
+  }
+}
+
+.like-icon.is-liked .heart {
+  animation: scale 0.3s 0.1s ease-in;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+    transform-origin: center;
+  }
+
+  50% {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+
+  to {
+    transform: scale(1);
+    transform-origin: center;
+  }
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in;
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.button-hover:hover .button__text,
+.button-hover:hover .floppy {
+  animation: opacity-in 0.4s linear;
+}
+
+.button-hover:not(:hover) .button__text,
+.button-hover:not(:hover) .floppy {
+  animation: opacity-out 0.4s linear;
+}
+
+@keyframes opacity-in {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-out {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

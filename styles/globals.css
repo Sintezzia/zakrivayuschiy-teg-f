@@ -42,6 +42,14 @@ ol {
   list-style: none;
 }
 
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -50,4 +58,9 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+
+dialog {
+  padding: 0;
 }
